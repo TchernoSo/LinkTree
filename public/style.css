@@ -1,0 +1,56 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("../images/backgournd6jpg.jpg"); /* Replace 'background.jpg' with the path to your image file */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; /* This will position the image at the center */
+    margin: 0; /* Remove default margin to make the page fill the entire viewport */
+    padding: 10%; /* Remove default padding to make the page fill the entire viewport */
+  }
+  
+  .container,
+  .navbar {
+    max-width: 900px; /* Set maximum width for content container */
+    margin: 0 auto; /* Center align the container horizontally */
+    text-align: center; /* Center align the text within the container */
+    padding: 20px; /* Add some padding to the container */
+    background: linear-gradient(
+      45deg,
+      #d50ce7,
+      #c92b6d,
+      #c4d1dd,
+      #315ec0,
+      hsl(204, 73%, 46%)
+    ); /* Add a semi-transparent background color to the container */
+  }
+  .card {
+    margin: 10px;
+  }
+  
+  /* Custom CSS for social media logos */
+  .social-media-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social-media-logos img {
+    margin: 0 5px; /* Update margin here */
+    max-width: 100%;
+    height: 40px; /* Update height here */
+  }
+  
+  h1,
+  h2,
+  .navbar-brand {
+    font-family: "Tangerine", serif;
+    text-shadow: 4px 4px 4px #cf1b1b;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    .text {
+      text-align: justify;
+    }
+  }
