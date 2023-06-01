@@ -19,12 +19,26 @@ body {
     padding: 20px; /* Add some padding to the container */
     background: linear-gradient(
       45deg,
-      #d50ce7,
-      #c92b6d,
-      #c4d1dd,
+      #c6a3c9,
+      #a53ca0,
       #315ec0,
-      hsl(204, 73%, 46%)
-    ); /* Add a semi-transparent background color to the container */
+      hsl(210, 31%, 64%)
+    ); 
+    background-size: 250% 250%;
+    animation: color 12s ease-in-out infinite;
+  }
+
+  @keyframes color {
+    0%{
+      background-position: 0 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0 50%;
+    }
+    
   }
   .card {
     margin: 10px;
