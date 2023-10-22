@@ -3,12 +3,14 @@ html {
 }
 
 body {
-    background-image: url("../images/backgournd6jpg.jpg"); /* Replace 'background.jpg' with the path to your image file */
+    background-image: url("../images/hzijrkbfudub1.jpg"); /* Replace 'background.jpg' with the path to your image file */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; /* This will position the image at the center */
     margin: 0; /* Remove default margin to make the page fill the entire viewport */
     padding: 10%; /* Remove default padding to make the page fill the entire viewport */
+    font-family: 'Gruppo', sans-serif;
+    font-family: 'Vast Shadow', serif;
     
   }
   
@@ -20,10 +22,10 @@ body {
     padding: 20px; /* Add some padding to the container */
     background: linear-gradient(
       45deg,
-      #39263c,
+      #c42bdb,
       #d51160,
-      #486ec1,
-      hsl(210, 31%, 64%)
+      #489bc1,
+      hsl(304, 51%, 70%)
     ); 
     background-size: 300% 300%;
     animation: color 15s ease-in-out infinite;
@@ -43,6 +45,10 @@ body {
   }
   .card {
     margin: 10px;
+    height: 80%;
+  }
+  .card-title{
+    padding-top: 20px;
   }
   .logos{
   box-shadow: 0px 2px 4px rgba(243, 19, 19, 0.967);
@@ -80,6 +86,7 @@ body {
   @media only screen and (min-width: 600px) {
     .text {
       text-align: justify;
+      font-weight: bolder;
     }
   }
 
