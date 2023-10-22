@@ -87,6 +87,14 @@ body {
     .text {
       text-align: justify;
       font-weight: bolder;
+      font-size: 2px;
+    }
+  }
+  @media only screen and (min-width: 200px) {
+    .text {
+      text-align: justify;
+      font-weight: bolder;
+      font-size: 10px;
     }
   }
 
