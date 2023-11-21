@@ -1,0 +1,65 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-image: url("../images/hzijrkbfudub1.jpg"); /* Replace 'background.jpg' with the path to your image file */
+    background-repeat:no-repeat ;
+    background-position: center; /* This will position the image at the center */
+    font-family: 'Gruppo', sans-serif;
+    font-family: 'Vast Shadow', serif;
+  }
+
+
+
+
+
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: 0;
+}
+
+/* hide close when burger shown */
+.navbar-toggler.collapsed .close-icon {
+    display: none;
+    
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+    display: inline;
+    
+}
+
+.container,
+  .navbar {
+    
+    margin: 0 auto; /* Center align the container horizontally */
+    text-align: center; /* Center align the text within the container */
+    padding: 20px; /* Add some padding to the container */
+  }
+
+
+  h1,
+  h2,
+  .navbar-brand {
+    font-family: "Tangerine", serif;
+    text-shadow: 4px 4px 4px #cf1b1b;
+  }
+
+
+
+  .fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease-in forwards;
+  }
+
+   
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
