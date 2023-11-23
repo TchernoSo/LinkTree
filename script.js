@@ -14,3 +14,14 @@ typeEffect();
 
 
 
+$('button').click(function(){
+    $('.success').addClass('show');
+    $('.success').addClass('alert');
+    $('.success').removeClass('hide');
+    setTimeout(function(){
+        $('.success').removeClass('show');
+        $('.success').addClass('hide');
+        
+    })
+});
+

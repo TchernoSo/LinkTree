@@ -8,6 +8,7 @@ html {
     background-position: center; /* This will position the image at the center */
     font-family: 'Gruppo', sans-serif;
     font-family: 'Vast Shadow', serif;
+
   }
 
   .fade-in {
@@ -192,26 +193,52 @@ html {
 
 
 
+.success{
+  position: absolute;
+  top: 5px;
+  right: 0px;
+  background-color: aquamarine;
+  padding: 10px 40px;
+  border-radius: 5px;
+  border-left: 6px solid greenyellow;
+}
 
-  .image-caption-container {
-    position: relative;
-     height: 200px;
+.success.alert{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.success.show{
+  animation: show_slide 1s ease forwards;
+}
+
+@keyframes show_slide {
+  0%{
+    transform: translate(100%);
   }
-  
-  .image-caption-container img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.6);
-    width: auto;
+  40%{
+    transform: translate(-10%);
+  }80%{
+    transform: translate(0%);
+  }100%{
+    transform: translate(-20px);
   }
-  
-  .caption {
-    position: relative;
-    background-color: black;
-    color: white;
-    padding: 10px;
-    opacity: 0.7;
+}
+
+
+.success.hide{
+  animation: hide_slide 1s ease forwards;
+}
+
+@keyframes hide_slide {
+  0%{
+    transform: translate(-10px);
   }
+  40%{
+    transform: translate(0%);
+  }80%{
+    transform: translate(-10%);
+  }100%{
+    transform: translate(100%);
+  }
+}
