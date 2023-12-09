@@ -13,6 +13,22 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="icon" type="image/jpeg" href="/images/icon2.avif" />
     <title>TheSoul</title>
+    <style>
+      .content-section {
+        background-image: url('/images/homepage-best-stargazing-locations.jpg'); /* Specify the path to your image */
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 100px; /* Adjust the padding as needed */
+        text-align: center;
+        color: white; /* Set the text color to contrast with the background */
+      }
+  
+      .inner-div {
+        background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background color to enhance contrast */
+        padding: 10px; /* Adjust the padding as needed */
+        margin: 10px 0; /* Adjust the margin as needed */
+      }
+    </style>
   </head>
 
   <body class="fade-in">
@@ -33,13 +49,13 @@
             <div class="collapse navbar-collapse justify-content-end" id="collapsingNavbar">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="./public/inspire-me.html">Inspire Me</a>
+                  <a class="nav-link nav-text" href="./public/inspire-me.html">Inspire Me</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./public/about-me.html">About Me</a>
+                  <a class="nav-link nav-text" href="./public/about-me.html">About Me</a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="#email">Contact Me</a>
+                  <a class="nav-link nav-text" href="#email">Contact Me</a>
                 </li>
               </ul>
             </div>
@@ -65,22 +81,53 @@
         </div>
     
         <div class="">
-            <h5  style="text-shadow: 4px 4px 4px #f7f9fb;" class=" display-4 text-center">Quotes from Souls around our Universe
+            <h5  style="text-shadow: 4px 4px 4px #3deed1;" class=" display-4 text-center">Thoughts from Souls around our Universe
             </h5>
           </div>
             
           
 
-    
+    <!-- The content -->
           
         <div class="container-fluid">
             <img src="/images/homepage-best-stargazing-locations.jpg" class="rounded intro w-75" alt="...">
           </div>
           <div class="container">
-            <a class="navbar-brand" href="/indexTest.html"><button class="btn" href="/indexTest.html">Send Me your Quote</button></a>
+            <a class="navbar-brand" href="/indexTest.html"><button class="btn " href="/indexTest.html">Send Me your Thoughts</button></a>
         </div>
     
 
+<!-- exemple  -->
+
+        <div class="content-section">
+          <div class="container">
+            <h5  style="" class=" display-4 text-center">Thoughts from Souls around our Universe
+            </h5>
+            
+      
+            <!-- Three inner divs -->
+            <div class="row">
+              <div class="col-md-4">
+                <div class="inner-div">
+                  <h2>tag</h2>
+                  <p>Content for Div 1 goes here.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="inner-div">
+                  <h2>Div 2</h2>
+                  <p>Content for Div 2 goes here.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="inner-div">
+                  <h2>Div 3</h2>
+                  <p>Content for Div 3 goes here.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
 
 
@@ -91,8 +138,8 @@
  
               
              <!-- Footer -->
-             <footer class=" container  text-center mt-4 py-2">
-              <p class="mb-0" style="font-weight: bold;">© 2023 TheSoul. <br
+             <footer class=" container text-center mt-4 py-2">
+              <p class="mb-0">© 2023 TheSoul. <br
                 >All rights reserved.</p>
                 <audio autoplay>
                   <source src="./audio/interstellar - pandora, chillwithme & cødy-251.mp3" type="audio/mpeg">

@@ -11,6 +11,36 @@ html {
 
   }
 
+
+/* page Effect  */
+
+@keyframes fade-down {
+  0%{
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes fade-up {
+  0%{
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+
+.intro{
+  animation: fade-up 0.5s;
+}
+
   .fade-in {
     opacity: 0;
     animation: fadeInAnimation 1s ease-in forwards;
@@ -26,6 +56,10 @@ html {
     }
   }
 
+
+
+
+/* NavBAr  */
 .navbar-expand{
   opacity: 0.5;
 }
@@ -56,13 +90,21 @@ html {
 
 .container,
   .navbar {
-   
-    margin: 0 auto; /* Center align the container horizontally */
+   margin: 0 auto; /* Center align the container horizontally */
     text-align: center; /* Center align the text within the container */
     padding: 20px; /* Add some padding to the container */
   }
 
 
+
+ 
+  /* End of NavBar  */
+
+
+
+  /* Content  */
+
+  
   .ts-picture{
     width: 150px; 
     height: 170px;
@@ -74,11 +116,18 @@ html {
 
   h1,
   h2, 
-  .navbar-brand {
+  .navbar-brand:hover {
     font-family: "Tangerine", serif;
-    text-shadow: 4px 4px 4px #cf1b1b;
+    text-shadow: 4px 4px 4px #00fad0;
   }
 
+  h3{
+    font-family: "Tangerine", serif;
+  }
+h5{
+  text-shadow: 4px 4px 4px #3deed1;
+  margin-bottom: 50px;
+}
   .blink_me {
     animation: blinker 3s linear infinite;
   }
@@ -97,17 +146,21 @@ html {
     font-size: 50px;
     color: #000000;
     text-shadow: 4px 4px 4px #f7f9fb;
-    
+  }
+
+  .nav-text{
+  color: #111111;
+  text-shadow: 4px 4px 4px #00fad0;
   }
   .carousel-text{
-    color: rgb(201, 144, 45);
+    color: #c9902d;
     text-shadow: 4px 4px 4px #f7f9fb;
     font-size: x-large;
   }
 
 .form-label{
-  color: #000000;
-  text-shadow: 4px 4px 4px #f7f9fb;
+  color: #bdc3c7;
+  text-shadow: 4px 4px 4px #ed4a26;
  
 }
 
@@ -117,19 +170,27 @@ html {
 .button{
   width: 50%;
    margin-bottom: 20px;
+   border-radius: 50px;
+     
    }
 .button:hover{
   color: #fff;
+  background-color: #000000;
+  
 }
 
 .btn{
+  
   background: linear-gradient(
     45deg,
-    #db2ba3,
-    #d25839,
-    #489bc1,
-    hsl(242, 53%, 36%)
+    #c9902d,
+    #00fad0,
+    #d8d1c3,
+    hsl(217, 28%, 33%)
+    
   ); 
+  border-radius: 50px;
+  
   background-size: 300% 300%;
   animation: color 15s ease-in-out infinite;
 }
@@ -145,6 +206,8 @@ html {
     background-position: 0 50%;
   }
 }
+
+
 
 
 
@@ -168,7 +231,7 @@ html {
 
 
 .logos{
-  box-shadow: 0px 2px 4px rgba(243, 19, 19, 0.967);
+  box-shadow: 0px 2px 4px rgba(19, 243, 236, 0.967);
   width: 50px; height: 50px; 
   border-radius: 20%;
   
@@ -195,8 +258,13 @@ html {
 
   }
 
+  footer{
+    font-weight: bold;
+    text-shadow: 4px 4px 4px #26eaed;
+    color: #bdc3c7;
+  }
 
-
+/* Form Section  */
   .name{
     width: 100%;
     position: relative;
@@ -236,7 +304,7 @@ html {
 }
 .email i{
   position: absolute;
-  top: 70%;
+  top: 73%;
   left: 92%;
   transform: translateY(-50%);
   font-size: 20px;
@@ -288,13 +356,15 @@ html {
 .message .success{
     font-size: 20px;
     color: green;
+    text-shadow: 4px 4px 4px #f3f3f3;
     position: absolute;
     animation: buttons .3s linear;
     display: none;
 }
 .message .danger{
     font-size: 20px;
-    color: red;
+    color: rgb(225, 89, 89);
+    text-shadow: 4px 4px 4px #f3f3f3;
     position: absolute;
     transition: .3s;
     animation: buttons .3s linear;
@@ -315,31 +385,3 @@ html {
 
 
 
-
-
-@keyframes fade-down {
-  0%{
-    opacity: 0;
-    transform: translateY(-30px) scale(0.9);
-  }
-  100%{
-    opacity: 1;
-    transform: translateY(0px) scale(1);
-  }
-}
-
-@keyframes fade-up {
-  0%{
-    opacity: 0;
-    transform: translateY(30px) scale(0.9);
-  }
-  100%{
-    opacity: 1;
-    transform: translateY(0px) scale(1);
-  }
-}
-
-
-.intro{
-  animation: fade-up 0.5s;
-}
