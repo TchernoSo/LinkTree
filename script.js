@@ -1,3 +1,5 @@
+// Sent button 
+
 function message(){
     var Name = document.getElementById('name');
     var email = document.getElementById('email');
@@ -26,6 +28,9 @@ function message(){
   
   }
   
+
+
+//   Main message 
   
   const text = "Welcome to MySpace";
   const speed = 150;
@@ -40,5 +45,35 @@ function message(){
   }
   
   typeEffect();
+
+
+
   
   
+//  submit handle
+
+const form = document.getElementById('myForm');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  // Your form submission logic here
+
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+
+  // Send form data to server using AJAX
+  // Replace with your server-side endpoint URL
+  const xhr = new XMLHttpRequest();
+  xhr.open('POST', '/submit-form');
+  xhr.onload = () => {
+    if (xhr.status === 200) {
+      console.log('Form submitted successfully');
+    } else {
+      console.error('Error submitting form');
+    }
+  };
+
+  const formData = new FormData(form);
+  xhr.send(formData);
+});
