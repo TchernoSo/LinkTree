@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container container-slide">
+        <div id="slide">
+            <div class="item" style="background-image:url(/images/homepage-best-stargazing-locations.jpg);">
+                <div class="content">
+                    <div class="name">Consistency</div>
+                    <div class="des">This is my journey of self-education, discipline, and consistency.For more than 15 years, I have been learning and growing, in Sports, Art, Life, and Tech.<br>
+                        This journey has shaped me into a better person, and I am excited to see where it takes me next.
+                        <br><br>
+                        Thank you
+                        <br><br>
+                        Tcherno So</div>
+                </div>
+            </div>
+            <div class="item imgsrc" style="background-image: url(/images/IMG_0950.JPG);">
+                <div class="content">
+                    <div class="name">Dear Soul.</div>
+                    <div class="des">Tcherno here, an entirely artist self-taught, let me share a bit of my journey.</div>
+                </div>
+            </div>
+            <div class="item imgsrc" style="background-image: url(/images/420575_308962925817918_268313000_n.jpg);">
+                <div class="content">
+                    <div class="name">00's</div>
+                    <div class="des">At only two years old, I moved from Netherlands to Portugal with a passion for football. I went from playing alone in the streets to being surrounded by amazing friends and signing my first amateur football club at 14. After just 4 years, my dream of becoming a professional football player were shattered when I suffered a (ACL) knee ligament injury that required surgery and six to eight months of recovery. The process exhausted me greatly, resulting in a decrease in both my confidence and fitness. As a result, I chose to take an break. (Never knew I'd come back!)
+                    </div>
+                </div>
+            </div>
+            <div class="item imgsrc" style="background-image: url(/images/IMG_9759.JPG);">
+                <div class="content">
+                    <div class="name">2016</div>
+                    <div class="des">I left Lisbon and moved to London to pursue my passion for Art and challenge myself to learn and grow in a new environment. I am grateful for the journey so far and the incredible people I met along the way, they helped me develop my individual abilities and knowledge. From dancing alone and traveling to a new city to join a highly experienced team that helped me evolve as a dancer and together, we created unforgettable performances across London for four years.</div>
+                </div>
+            </div>
+            <div class="item imgsrc" style="background-image: url(/images/profile2.jpg);">
+                <div class="content">
+                    <div class="name">2020</div>
+                    <div class="des">The pandemic changed everything, a very difficult time for me and everyone. I started exploring the world of life coaching to guide me through. <br>
+                        Difficult times can lead us to a deeper understanding of who we really are and what we are capable of. After learning about the concept of life and its challenges, I successfully transformed myself into a better person. Since then, I have helped others in similar situations.</div>
+                </div>
+            </div>
+            <div class="item imgsrc" style="background-image: url(/images/icon23.jpg);">
+                <div class="content">
+                    <div class="name">2022</div>
+                    <div class="des">I challenged myself to learn computer science and programming, something I had always found interesting but difficult to tackle long-term. This journey opened up new and exciting possibilities, like building this website entirely from scratch. I am excited with this journey and to see what the future holds.</div>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+            <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+    </div>
+
+    <script>
+
+document.getElementById('next').onclick = function(){
+  let lists = document.querySelectorAll('.item');
+  document.getElementById('slide').appendChild(lists[0]);
+}
+document.getElementById('prev').onclick = function(){
+  let lists = document.querySelectorAll('.item');
+  document.getElementById('slide').prepend(lists[lists.length - 1]);
+}
+
+    </script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

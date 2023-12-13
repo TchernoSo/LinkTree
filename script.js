@@ -77,3 +77,8 @@ form.addEventListener('submit', (event) => {
   const formData = new FormData(form);
   xhr.send(formData);
 });
+
+
+
+// about me 
+
