@@ -69,43 +69,57 @@
 
 
         <!-- Content  -->
-        <div class="container">
+        <div class="container container-slide">
           <div id="slide">
-            <div class="item" style="background-image:url(/images/420575_308962925817918_268313000_n.jpg);">
-              <div class="content">
-                <div class="name-img"></div>
-                  <div class="des">here is the description</div>
-                  <button>see more</button>
+              <div class="item imgsrc" style="background-image:url(/images/homepage-best-stargazing-locations.jpg);">
+                  <div class="content ">
+                      <div class="name">Meant To Be</div>
+                      <div class="des">This is my journey for more than 15 years of self-education, discipline, and consistency.<br>
+                          Life itself has been my greatest teacher and taught me the importance of embracing the journey with open arms. <br> Sports showed me the values of discipline and teamwork, Art increased my creativity and imagination and Tech taught me the ability to innovate and optimize.
+                          Today I am who I am because of the choices I made, my choices created my path.
+                          <br><br>
+                          Tcherno So</div>
+                  </div>
               </div>
-            </div>
-            <div class="item" style="background-image:url(/images/IMG_9759.JPG);">
-              <div class="content">
-                <div class="name-img"></div>
-                  <div class="des">here is the description</div>
-                  <button>see more</button>
+              <div class="item imgsrc" style="background-image: url(/images/IMG_0950.JPG);">
+                  <div class="content">
+                      <div class="name">Dear Soul.</div>
+                      <div class="des">Tcherno here, an entirely Self-Taught Artist.</div>
+                  </div>
               </div>
-            </div>
-            <div class="item" style="background-image:url(/images/icon23.jpg);">
-              <div class="content">
-                <div class="name-img"></div>
-                  <div class="des">here is the description</div>
-                  <button>see more</button>
+              <div class="item imgsrc" style="background-image: url(/images/420575_308962925817918_268313000_n.jpg);">
+                  <div class="content">
+                      <div class="name">00's</div>
+                      <div class="des">Born in the Netherlands, moved to Portugal at the age of two.<br> My mother remembers how I always carried the ball with me, refusing to leave it behind, as it was the only thing I brought from home. <br>I would spend hours kicking the ball against the wall and playing alone in the streets until I started to be surrounded by amazing friends, and a few years later I joined my first amateur football club. <br>Just 4 years later, I suffered an ACL injury, leading to surgery and six to eight months of recovery. This resulted in a decrease of my confidence and fitness, so I decided to take a break. (Never knew I'd come back!)
+                      </div>
+                  </div>
               </div>
-            </div>
-            <div class="item" style="background-image:url(/images/homepage-best-stargazing-locations.jpg);">
-              <div class="content">
-                <div class="name-img"></div>
-                  <div class="des">here is the description</div>
-                  <button>see more</button>
+              <div class="item imgsrc" style="background-image: url(/images/IMG_9759.JPG);">
+                  <div class="content">
+                      <div class="name">2016</div>
+                      <div class="des">Art was starting to develop in my soul and I needed a challenge, something to push me further, so I decided to learn HipHop dance and months later, I quit my job, sold my car, and left Lisbon, leaving behind my family and friends to move to London, a city renowned for its art scene, creativity, and diversity. I am thankful for the journey and the amazing people I have met.<br> I joined a skilled team who helped me grow as a dancer and together we created unforgettable performances in London for four years.</div>
+                  </div>
               </div>
-            </div>
+              <div class="item imgsrc" style="background-image: url(/images/profile2.jpg);">
+                  <div class="content">
+                      <div class="name">2020</div>
+                      <div class="des">The pandemic!<br>Personally, the loneliest moment of my life, a period of deep reflection!<br>End up feeling like something good came out of something bad. This period has revealed my true essence. I am stronger, more aware, and infinitely more at peace.<br>
+                          Difficult times can lead us to a deeper understanding of who we are and what we are capable of. Since then, I have been writing and dedicated to creating a world where no one has to face challenges alone "The Soul".</div>
+                  </div>
+              </div>
+              <div class="item imgsrc" style="background-image: url(/images/icon23.jpg);">
+                  <div class="content">
+                      <div class="name">2022</div>
+                      <div class="des">I decided to create my website.<br>
+                          After research and questions, I decided to begin the journey of studying computer science and programming. From my first line of code to building this website from scratch. Day by day, I found myself increasingly fascinated with the magic of code, the power of algorithms, and the capability to generate something out of nothing. Coding for me is like a limitless game, with constant upgrades but never an end. I will continue on this journey and see what the future holds.</div>
+                  </div>
+              </div>
           </div>
           <div class="buttons">
-            <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
-            <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+              <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+              <button id="next"><i class="fa-solid fa-angle-right"></i></button>
           </div>
-        </div>
-
+      </div>
 
 
 
@@ -131,7 +145,15 @@
   
   
   
-  
+  <script>document.getElementById('next').onclick = function(){
+    let lists = document.querySelectorAll('.item');
+    document.getElementById('slide').appendChild(lists[0]);
+  }
+  document.getElementById('prev').onclick = function(){
+    let lists = document.querySelectorAll('.item');
+    document.getElementById('slide').prepend(lists[lists.length - 1]);
+  }
+  </script>
   
   <script href="/script.js"></script>
   
