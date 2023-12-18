@@ -1,40 +1,150 @@
-body{
-    background-image: url("/images/hzijrkbfudub1.jpg"); /* Replace 'background.jpg' with the path to your image file */
+html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-image: url("../images/hzijrkbfudub1.jpg"); /* Replace 'background.jpg' with the path to your image file */
     background-repeat:no-repeat ;
     background-position: center; /* This will position the image at the center */
     font-family: 'Gruppo', sans-serif;
     font-family: 'Vast Shadow', serif;
-    overflow: hidden;
-    
+    overflow-x: hidden;
+    overflow-y: scroll; 
+  }
+  .example::-webkit-scrollbar {
+    display: none;
 }
+
+
+  /* NavBAr  */
+.navbar-expand{
+    opacity: 0.5;
+  }
+  
+  .navbar{
+    background: rgb(29, 28, 28);
+    margin-bottom: 20px;
+   
+  }
+  
+  
+  .navbar-toggler:focus,
+  .navbar-toggler:active {
+      outline: 0;
+      
+  }
+  
+  /* hide close when burger shown */
+  .navbar-toggler.collapsed .close-icon {
+      display: none;
+      
+  }
+  
+  .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+      display: inline;
+      
+      
+  }
+  
+  .container,
+    .navbar {
+     margin: 10px auto; /* Center align the container horizontally */
+      text-align: center; /* Center align the text within the container */
+      padding: 20px; /* Add some padding to the container */
+    }
+  
+
+    
+  .ts-picture{
+    width: 150px; 
+    height: 170px;
+  }
+
+
+
+
+
+  h1,
+  h2, 
+  .navbar-brand:hover {
+    font-family: "Tangerine", serif;
+    text-shadow: 4px 4px 4px #00fad0;
+  }
+
+  h3{
+    font-family: "Tangerine", serif;
+  }
+h5{
+  text-shadow: 4px 4px 4px #3deed1;
+  margin-bottom: 20px;
+}
+  
+.nav-text{
+    color: #111111;
+    text-shadow: 4px 4px 4px #00fad0;
+    }
+  
+
+      .blink_me {
+    animation: blinker 3s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      color: white;
+      opacity: 0.7;
+    }
+  }
+   
+    /* End of NavBar  */
+
+    .ts-picture{
+        width: 150px; 
+        height: 170px;
+      }
+      .blink_me {
+        animation: blinker 3s linear infinite;
+      }
+      
+      @keyframes blinker {
+        50% {
+          color: white;
+          opacity: 0.7;
+        }
+      }
+    
+    
+      footer{
+        font-weight: bold;
+        text-shadow: 4px 4px 4px #26eaed;
+        color: #020202;
+      }
+    
 
 
 .imgsrc {
     filter: brightness(0.8);
   }
   
-.container-slide{
-    position: absolute;
-    left:50%;
-    top:50%;
-    transform: translate(-50%,-50%);
+  .container-slide{
+    position: relative;
     width:1000px;
     height:600px;
-    padding:50px;
-    background-color: #c6782473;
-    box-shadow: 0 30px 50px #dbdbdb;
-    
-    
-}
+    /* padding:50px; */
+    background-color: #00000073;
+    box-shadow: 0 30px 50px #dbdbdb;}
+
 #slide{
-    width:max-content;
-    margin-top:50px;
+    /* width:max-content; */
+    /* margin-top:50px; */
 }
+
+
 .item{
     width:200px;
-    height:300px;
+    height:200px;
     background-position: 50% 50%;
-    display: inline-block;
+    /* display: inline-block; */
     transition: 0.5s;
     background-size: cover;
     position: absolute;
@@ -109,19 +219,65 @@ body{
         animation: fadeIn 1s ease-in-out;
     }
   
-    @keyframes fadeIn {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
+ 
     .item .des{
         font-size: 15px;
     }
- 
+    .container-slide{
+        width:500px;
+     
+    }
+
+    .item:nth-child(2){
+        width: 100%;
+    }
 }
+
+
+@keyframes fade-down {
+    0%{
+      opacity: 0;
+      transform: translateY(-30px) scale(0.9);
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(0px) scale(1);
+    }
+  }
+  
+  @keyframes fade-up {
+    0%{
+      opacity: 0;
+      transform: translateY(30px) scale(0.9);
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(0px) scale(1);
+    }
+  }
+  
+
+.intro{
+    animation: fade-up 0.5s;
+  }
+  
+    .fade-in {
+        opacity: 0;
+        animation: fadeInAnimation 1s ease-in forwards;
+      }
+    
+       
+      @keyframes fadeInAnimation {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    
+
+
 .item:nth-child(2) .content{
     display: block;
     z-index: 11111;
@@ -178,4 +334,3 @@ body{
 }.buttons button:hover{
     background-color: #83c3bc;
 }
-  

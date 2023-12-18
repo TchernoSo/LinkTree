@@ -80,5 +80,3 @@ form.addEventListener('submit', (event) => {
 
 
 
-// about me 
-
