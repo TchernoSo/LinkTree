@@ -78,5 +78,3 @@ form.addEventListener('submit', (event) => {
   xhr.send(formData);
 });
 
-
-
