@@ -1,146 +1,200 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Link Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./public/style.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Font+Name"
     />
-    <link rel="icon" type="image/jpeg" href="./images/icon2.avif">
-    <script src="./script.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="icon" type="image/jpeg" href="./images/icon2.avif" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <title>TheSoul</title>
+  
   </head>
-  <body class="fade-in">
-     <!-- Navigation Bar -->
-     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background: white;" >
-        <a class="navbar-brand" href="#">TheSoul</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+  <body class="fade-in nonescroll">
+    <div class="container">
+        <!-- Navbar -->
+        <nav
+        class="navbar navbar-expand-lg navbar-light bg-light rounded"
+        
+      >
+        <a class="navbar-brand user-select-none" href="#">TheSoul</a>
+
+        <button class="navbar-toggler collapsed border-0 shadow-lg" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+            <span class="navbar-toggler-icon "></span>
+            <div class="close-icon py-1 fade-in" style="font-size: x-large;">✖</div>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+      
+        <div class="collapse navbar-collapse justify-content-end" id="collapsingNavbar">
           <ul class="navbar-nav ml-auto">
-          
+            <li class="nav-item active">
+              <a class="nav-link nav-text" href="./public/inspire-me.html">Inspire Me</a>
+            </li>
             <li class="nav-item">
-              <a class="nav-link" href="./public/about-me.html">About Me</a>
+              <a class="nav-link nav-text" href="./public/about-me.html">About Me</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#contact">Contact Me</a>
+              <a class="nav-link nav-text" href="#name">Contact Me</a>
             </li>
           </ul>
         </div>
       </nav>
-      <div class="main-image container img-fluid">
-        <img
-          src="./images/profile2.jpg"
-          alt="Profile Picture"
-          class="rounded img-fluid"
-          style="width: 150px; height: 170px"
-        />
-        <h1  >@ts_offixyal</h1>
-        <h5 style="text-shadow: 4px 4px 4px #f7f9fb;">Welcome To My Space
-        </h5>
-      </div>
-      <!-- Three Containers -->
-    <div class="container mt-4" style="padding: 0%;">
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="card">
-              <a href="https://paypal.me/TchernoSo" style="text-decoration: none; color: inherit;
-             "><img
-                src="./images/paypallogo.png"
-                alt="Logo 2"
-                class="card-img-top mx-auto logos"
-                
-              /></a>
-             
-               <div class="card-body">
-                <a href="https://paypal.me/TchernoSo" style="text-decoration: none; color: inherit;
-                "><h5 class="">Paypal</h5></a>
-                <p class="card-text text-center">
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-sm-4">
-            <div class="card">
-              <a href="mailto:tcherno.so@hotmail.com" style="text-decoration: none; color: inherit;
-              "> <img
-                src="./images/emaillogo.jpg"
-                alt="Logo 3"
-                class="card-img-top mx-auto logos "
-                
-              /></a>
-              <div class="card-body" style="padding-top: 5px;">
-                <a href="mailto:tcherno.so@hotmail.com" style="text-decoration: none; color: inherit;
-              "><h5 class="card-title" id="contact">Contact Me</h5></a>
-                <p class="card-text text-center"></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-   
-      <div class="container mt-5">
-        <h2>My Media</h2>
-        <div class="row social-media-logos">
-          <div>
-            <a href="https://www.instagram.com/ts_offixyal/">
-              <img src="./images/instagram.png" alt="instagram" class="img-fluid rounded img-media"  alt="Facebook" >
-            </a>
-          </div>
-          <div>
-            <a href="https://www.youtube.com/channel/UCYhZDo1uyJrYcoq_RSV-xhQ">
-              <img src="./images/youtube.png" alt="youtube" class="img-fluid rounded img-media" alt="Youtube" style="width: 40px;">
-            </a>
-          </div>
-          <div>
-            <a href="https://www.tiktok.com/@ts_offixyal?is_from_webapp=1&sender_device=pc">
-              <img src="./images/tiktok.png" alt="tiktok" class="img-fluid rounded img-media" alt="tiktok" style="width: 50px;">
-            </a>
-          </div>
-          <div>
-            <a href="https://www.threads.net/@ts_offixyal">
-              <img src="./images/Threads-logo.jpg" alt="Threads" class="img-fluid rounded img-media" alt="Threads" >
-            </a>
-          </div>
-          <div>
-            <a href="https://github.com/TchernoSo">
-              <img src="./images/git hub.png" alt="GitHub" class="img-fluid rounded img-media"  alt="GitHub" >
-            </a>
-          </div>
-          
-        </div>
-      </div>
-          <!-- Footer -->
-  <footer class=" container bg-light text-center mt-4 py-2">
-    <p class="mb-0" style="font-weight: bold;">© 2023 TheSoul. <br
-      >All rights reserved.</p>
-      <audio autoplay>
-        <source src="./audio/interstellar - pandora, chillwithme & cødy-251.mp3" type="audio/mpeg">
-        Your browser does not support the audio.
-      </audio>
-
-      
+        <!-- End Navbar -->
     
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </body>
+        <!-- Introduction -->
+        <div class="main-image container">
+            <img
+            src="/images/profile2.jpg"
+            alt="Profile Picture"
+            class=" ts-picture rounded img-fluid"
+          />
+          <h1 class="blink_me user-select-none">@ts_offixyal</h1>
+        </div>
+        
+        <h5 id="text" class="user-select-none">
+        </h5>
+        </div>
+    
+        <!-- Form section -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 offset-md-3">
+              <form action="https://formsubmit.co/tcherno.so@hotmail.com" method="POST" id="myForm">
+                <div class="mb-3 name">
+                    <label for="tag" class="form-label" >@tag</label>
+                    <i class="fas fa-user"></i>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your tag">
+                  </div>
+                 
+          
+                  <div class="mb-3 email" >
+                    <label for="email" class="form-label">Email address</label>
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" class="form-control" id="email" placeholder="Enter your email address" required>
+                    <input type="hidden" name="_subject" value="New Message!">
+                    <input type="hidden" name="_captcha" value="true">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_autoresponse" value="It was very nice to hear from you. I will respond to you as soon as possible.">
+                    <input type="hidden" name="_next" value="https://www.welcomethesoul.com/index.html">
+                  </div>
+          
+                  
+          
+          
+          
+          
+                  <div class="mb-3 message-box">
+                    <label for="message" class="form-label">Message/Thoughts</label>
+                    <textarea class="form-control" id="msg"  rows="3" placeholder="Enter your Message/Thoughts" required></textarea>
+                  </div>
+                  
+                
+          
+          
+          
+                  <div class="">
+                    <button id="send" onclick="message()" type="submit" class="btn btn-outline-light alert button ">Submit</button>
+                  </div>
+          
+                  
+          
+                  <div class="message">
+                    <div class="success" id="success">Thank you for your message and get back to you shortly.</div>
+                    <div class="danger" id="danger">Please provide your Email & Message!</div>
+                  </div>
+              </form>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Inspire Me -->
+        <div class="main-image container">
+            <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="true">
+                <div class="carousel-inner">
+                  <div class="carousel-item active carousel-class">
+                    <img src="/images/homepage-best-stargazing-locations.jpg" class="d-block w-100 carousel-image rounded" alt="...">
+                    <div class="carousel-caption ">
+                      <h5 class=" blink_me text-uppercase carousel-text">@tag</h5>
+                      <p class="text-capitalize m-3">"Thoughts"</p>
+                     <a href="#name"><button class=" btn">Send Me your Thoughts</button></a>
+                    </div>
+                  </div>
+                  <div class="carousel-item carousel-class">
+                    <img src="/images/homepage-best-stargazing-locations.jpg" class="d-block w-100 carousel-image rounded" alt="...">
+                    <div class="carousel-caption ">
+                      <h5 class=" blink_me text-uppercase carousel-text">@tag</h5>
+                      <p class="text-capitalize m-3">"Thoughts"</p>
+                      <a href="#name"></a><button class="btn">Send Me your Thoughts</button></a>
+                    </div>
+                  </div>
+                  <div class="carousel-item carousel-class">
+                    <img src="/images/homepage-best-stargazing-locations.jpg" class="d-block w-100 carousel-image rounded" alt="...">
+                    <div class="carousel-caption ">
+                      <h5 class=" blink_me text-uppercase carousel-text">@tag</h5>
+                      <p class="text-capitalize m-3">"Thoughts"</p>
+                      <a href="#name"></a><button class="btn" >Send Me your Thoughts</button></a>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    
+        <!-- My Social Media -->
+        <div class="container text-decoration-underline">
+            <h3 style="text-shadow: 4px 4px 4px #fa3e00;">My Media</h3>
+            <div class="container-fluid text-white d-flex flex-wrap justify-content-center align-items-center">
+                <a href="https://www.instagram.com/ts_offixyal/" target="_blank">
+                  <img class="logos" src="./images/instagram.png" alt="Instagram"style="margin-right: 10px;">
+                </a>
+                <a href="https://www.youtube.com/channel/UCYhZDo1uyJrYcoq_RSV-xhQ/" target="_blank">
+                  <img  class="logos"src="./images/youtube.png" alt="Youtube" style="margin-right: 10px;">
+                </a>
+                <a href="https://www.tiktok.com/@ts_offixyal?is_from_webapp=1&sender_device=pc" target="_blank">
+                  <img class="logos" src="./images/tiktok.png" alt="tiktok"style="margin-right: 10px;">
+                </a>
+                <a href="https://www.threads.net/@ts_offixyal" target="_blank">
+                  <img class="logos" src="./images/Threads-logo.jpg" alt="Threads"style="margin-right: 10px;">
+                </a>
+                <a href="https://github.com/TchernoSo" target="_blank">
+                  <img class="logos" src="./images/git hub.png" alt="GitHub"style="margin-right: 10px;">
+                </a>
+                <a href="https://paypal.me/TchernoSo/" target="_blank">
+                  <img class="logos" src="./images/paypal_2014_logo_detail.png" alt="Paypal"style="margin-right: 10px;">
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+    
+      <!-- Footer -->
+      <footer class="container  text-center mt-4 py-2">
+        <p class="mb-0" style="font-weight: bold;">© 2023 TheSoul. <br
+          >All rights reserved.</p>
+          <audio autoplay>
+            <source src="./audio/interstellar - pandora, chillwithme & cødy-251.mp3" type="audio/mpeg">
+            Your browser does not support the audio.
+          </audio>
+      </footer>
+    
+<!-- JavaScript  -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="/script.js"></script>
+<script src="path/to/smooth-scroll.min.js"></script>
+</body>
 </html>
