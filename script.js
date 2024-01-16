@@ -32,8 +32,8 @@ function message(){
 
 //   Main message 
   
-  const text = "Welcome to MySpace, my name is Tcherno an entirely self-taught Artist, Writer and Coder. Feel free to explore around.";
-  const speed = 100;
+  const text = "Welcome to MySpace, my name is Tcherno an entirely self-taught Artist, Writer and Coder.";
+  const speed = 50;
   
   var i = 0;
   
